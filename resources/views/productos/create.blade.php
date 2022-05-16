@@ -24,6 +24,18 @@
         </div>
       </div>
       <div class="row">
+      <div class="col s8 input-field">
+        <select name="marca" id="marca">
+          <option>
+            Elija su Marca
+          </option>
+          @foreach($marcas as $marca)
+          <option>{{ $marca->nombre}}</option>
+          @endforeach
+        </select>
+      </div>
+      </div>
+      <div class="row">
         <div class="input-field col s12">
           <input id="password" type="password" class="validate">
           <label for="password">Password</label>
